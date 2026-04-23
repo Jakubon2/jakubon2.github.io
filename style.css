@@ -53,6 +53,16 @@ main {
   font-size: 0.95rem;
 }
 
+.about a {
+  color: var(--accent-hover);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.about a:hover {
+  color: #fff;
+}
+
 .links {
   display: flex;
   flex-wrap: wrap;
@@ -82,8 +92,9 @@ main {
 }
 
 .btn--secondary:hover {
+  background: var(--surface);
   border-color: var(--accent);
-  color: var(--accent-hover);
+  color: var(--text);
 }
 
 footer {
