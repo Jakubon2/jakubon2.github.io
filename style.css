@@ -278,3 +278,8 @@ footer {
   border-radius: 8px;
   border: 1px solid var(--line);
 }
+
+.list .list__stack {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
