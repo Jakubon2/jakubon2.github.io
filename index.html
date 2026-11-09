@@ -4,41 +4,111 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Jakub Jan Ondráček</title>
+  <meta name="description" content="Jakub Jan Ondráček – QA tester se zaměřením na AI a automatizaci v Deafcomu, student informatiky a redaktor Dotekománie." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <main>
-    <section class="hero">
-      <h1>Jakub Jan Ondráček</h1>
-      <p class="tagline">Student informatiky &amp; redaktor</p>
-    </section>
+  <div class="page">
+    <header class="top">
+      <a href="index.html" class="top__name">Jakub Jan Ondráček</a>
+      <nav class="top__links">
+        <a href="#prace">Práce</a>
+        <a href="#projekty">Projekty</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
+    </header>
 
-    <section class="about">
-      <p>
-        Zajímám se o moderní technologie a data, píšu články a recenze elektromobilů na Dotekománii. Ve volném čase experimentuji
-        s novými technologiemi a nástroji - např. Claude Code a pracuji na vlastních projektech - menší weby pro malé firmy, naposledy i automatizace zpracovávání dokumentů pro advokátní kancelář nebo <a href="https://tablepick.cz">
-        tablepick.cz
-      </a>.
-      </p>
-    </section>
+    <main>
+      <section class="intro">
+        <h1>
+          Testuju software v&nbsp;Deafcomu, stavím automatizace a&nbsp;píšu o&nbsp;technologiích.
+        </h1>
+        <p>
+          Jsem QA tester se zaměřením na AI a automatizaci, student aplikované informatiky
+          a redaktor na Dotekománii. Ve volném čase stavím vlastní projekty.
+        </p>
+      </section>
 
-    <section class="links">
-      <a href="https://www.linkedin.com/in/jakub-jan-ondr%C3%A1%C4%8Dek-62230b209/" target="_blank" rel="noopener" class="btn">
-        LinkedIn
-      </a>
-      <a href="semestralni_prace_databaze.pdf" class="btn btn--secondary" id="semester-link" download>
-        Semestrální práce SQL - databáze - stáhnout
-      </a>
-      <a href="powerbi.html" class="btn btn--secondary">
-        Mini PowerBI projekt
-      </a>
-  <a href="jakub_jan_ondracek_cv.docx" class="btn btn--secondary" id="cv-link" download>
-        Stáhnout CV
-      </a>
-    </section>
-  </main>
-  <footer>
-    <p>&copy; 2026 Jakub Jan Ondráček</p>
-  </footer>
+      <section id="prace" class="row">
+        <h2 class="row__label">Práce</h2>
+        <div class="row__body">
+          <div class="entry">
+            <h3>QA tester, AI a automatizace <span class="entry__org">Deafcom</span></h3>
+            <p>
+              Deafcom provozuje platformu pro tlumočení do znakového jazyka na dálku,
+              kterou využívají partneři v několika zemích. Testuju webové a mobilní aplikace
+              a stavím nástroje, které zrychlují testování a hlášení chyb.
+            </p>
+          </div>
+          <div class="entry">
+            <h3>Redaktor <span class="entry__org">Dotekománie</span></h3>
+            <p>Články a recenze nejen o elektromobilech.</p>
+          </div>
+          <div class="entry">
+            <h3>Student aplikované informatiky <span class="entry__org">VŠE v Praze</span></h3>
+            <p>2. ročník</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="projekty" class="row">
+        <h2 class="row__label">Projekty</h2>
+        <div class="row__body">
+          <article class="feature">
+            <h3>Skywatch CZ</h3>
+            <p class="feature__lead">Živá mapa letadel nad Českem.</p>
+
+            <div class="shots">
+              <img src="img/skywatch-map.jpg" width="375" height="812" loading="lazy" alt="Skywatch CZ: mapa letadel nad Českem" />
+              <img src="img/skywatch-feed.jpg" width="375" height="812" loading="lazy" alt="Skywatch CZ: přehled událostí s vysvětlením od AI" />
+              <img src="img/skywatch-flights.jpg" width="375" height="812" loading="lazy" alt="Skywatch CZ: sledování konkrétního letu" />
+            </div>
+
+            <p class="feature__text">
+              Hlídá nouzové situace, nepovedená přistání nebo kroužení a krátce je popíše pomocí AI.
+              Umí taky sledovat konkrétní let a dát vědět, když přistane.
+            </p>
+
+            <p class="feature__stack">Python, FastAPI, React, Leaflet, Claude API</p>
+
+            <p class="feature__links">
+              <a href="https://github.com/Jakubon2/skywatch-cz" target="_blank" rel="noopener">Kód na GitHubu</a>            </p>
+          </article>
+
+        <ul class="list">
+          <li>
+            <strong>Zpracování dokumentů pro advokátní kancelář</strong>
+            <span>Automatizace, která kanceláři ušetří práci jednoho zaměstnance. Soukromý projekt, kód není veřejný.</span>
+            <img class="list__shot" src="img/evolio.jpg" width="800" height="148" loading="lazy" alt="Webové rozhraní automatizace: přehled zpracovaných zásilek, údaje o případech rozmazané" />
+          </li>
+          <li>
+            <a href="powerbi.html">Mini PowerBI projekt</a>
+            <span>Interaktivní report v Power BI.</span>
+          </li>
+          <li>
+            <a href="semestralni_prace_databaze.pdf" download>Semestrální práce: SQL databáze</a>
+            <span>Návrh a implementace databáze (PDF).</span>
+          </li>
+        </ul>
+        </div>
+      </section>
+
+      <section id="kontakt" class="row">
+        <h2 class="row__label">Kontakt</h2>
+        <div class="row__body">
+          <p class="contact">
+            Nejrychleji mě zastihnete na
+            <a href="https://www.linkedin.com/in/jakub-jan-ondr%C3%A1%C4%8Dek-62230b209/" target="_blank" rel="noopener">LinkedInu</a>.
+            Životopis si můžete <a href="cv/jakub_jan_ondracek_cv.pdf" target="_blank" rel="noopener">otevřít tady</a> (PDF).
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer>&copy; 2026 Jakub Jan Ondráček</footer>
+  </div>
 </body>
 </html>

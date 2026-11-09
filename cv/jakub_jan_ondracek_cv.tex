@@ -1,0 +1,224 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{iftex}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\fi
+\usepackage[czech]{babel}
+\usepackage{tabularx}
+\ifPDFTeX
+  \input{glyphtounicode}
+\fi
+
+
+%----------FONT----------
+% Charter -- serif, dobra citelnost, funguje s ceskou diakritikou v T1.
+\ifPDFTeX
+  \usepackage{charter}
+\else
+  \usepackage{fontspec}
+  \setmainfont{XCharter}[Extension=.otf, UprightFont=*-Roman, BoldFont=*-Bold, ItalicFont=*-Italic, BoldItalicFont=*-BoldItalic]
+\fi
+\linespread{1.05}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{2pt}\scshape\raggedright\normalsize\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-3pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\ifPDFTeX
+  \pdfgentounicode=1
+\fi
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+\begin{center}
+    \textbf{\Huge Jakub Jan Ondráček} \\ \vspace{4pt}
+    \small Praha, Česká republika $|$
+    \href{mailto:ondracek.j.j@gmail.com}{\underline{ondracek.j.j@gmail.com}} $|$
+    \href{https://www.linkedin.com/in/jakub-jan-ondr%C3%A1%C4%8Dek-62230b209/}{\underline{LinkedIn}}
+\end{center}
+%-----------PROFILE-----------
+\section{Profil}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     Student aplikované informatiky na VŠE se základy práce s daty (SQL, Power BI, Python) ze školních projektů a s reálnou praxí v jednání s klienty a obchodními partnery. Jako novinář samostatně vedu spolupráce s firmami a PR zastoupeními.
+    }}
+ \end{itemize}
+
+%-----------EXPERIENCE-----------
+\section{Pracovní zkušenosti}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {QA tester -- AI a automatizace}{říjen 2026 -- současnost}
+      {Deafcom Solutions International}{Praha}
+      \resumeItemListStart
+        \resumeItem{Testuji webové a mobilní aplikace platformy pro tlumočení do znakového jazyka na dálku, kterou využívají partneři v několika zemích}
+        \resumeItem{Stavím AI nástroje a automatizace (Claude Code), které zrychlují testování a hlášení chyb}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Redaktor}{leden 2025 -- současnost}
+      {Dotekománie.cz}{Praha + remote}
+      \resumeItemListStart
+        \resumeItem{Zpracovávám data z vlastních testů a měření do analýz a srozumitelných výstupů pro čtenáře}
+        \resumeItem{Samostatně jednám s obchodními partnery a PR zastupitelstvím značek (např. Tesla, BYD, MG)}
+        \resumeItem{Píšu komerční obsah a dělám copywriting na zadání klientů}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Redaktor}{květen 2022 -- květen 2024}
+      {ArteMan s.r.o.}{remote}
+      \resumeItemListStart
+        \resumeItem{Psaní zpravodajských článků z oblasti elektromobility}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projekty}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+      {\textbf{Datová analýza a reporting v Power BI} $|$ \emph{Power BI, star schema, DAX}}{2025}
+      \resumeItemListStart
+        \resumeItem{Postavil jsem datový model (star schema) nad historickými daty F1 1950--2024, s KPI přehledy a interaktivními vizualizacemi pro srovnání týmů a jezdců}
+      \resumeItemListEnd
+    \resumeProjectHeading
+      {\textbf{Datové modelování a SQL} $|$ \emph{Oracle SQL, konceptuální modelování}}{2025}
+      \resumeItemListStart
+        \resumeItem{Navrhl a implementoval jsem relační databázi pro sledování fotbalových zápasů (semestrální práce VŠE)}
+      \resumeItemListEnd
+    \resumeProjectHeading
+      {\textbf{Automatizace zpracování dokumentů} $|$ \emph{Python, OCR, Playwright}}{2025}
+      \resumeItemListStart
+        \resumeItem{Vytvořil jsem automatizovaný pipeline pro extrakci a zpracování dat z právních dokumentů (OCR, parsování PDF) pro advokátní kancelář}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------EDUCATION-----------
+\section{Vzdělání}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Vysoká škola ekonomická v Praze}{Praha}
+      {Bc. Aplikovaná informatika (Fakulta informatiky a statistiky)}{září 2025 -- současnost}
+      \resumeItemListStart
+        \resumeItem{Relevantní předměty: databáze, datové minimum}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Gymnázium Třebíč}{Třebíč}
+      {Maturitní zkouška}{září 2017 -- červen 2025}
+  \resumeSubHeadingListEnd
+
+
+%-----------CERTIFICATES-----------
+\section{Certifikáty}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Associate Data Engineer in SQL}{duben 2026}
+      {DataCamp}{}
+      \resumeSubheading
+      {Certificate in Advanced English C1 (CAE)}{září 2024}
+      {Cambridge International Education}{}
+  \resumeSubHeadingListEnd
+
+
+%-----------SKILLS-----------
+\section{Dovednosti}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Data}{: SQL, Power BI, Python (základy), Excel / Google Sheets} \\
+     \textbf{Ostatní}{: jednání s obchodními partnery a klienty, copywriting a psaní, řidičský průkaz sk. B - aktivně} \\
+     \textbf{Jazyky}{: čeština (rodilý mluvčí), angličtina C1 (CAE)}\\
+     \textbf{Nástroje}{: MS Office, Claude Code} \\
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
